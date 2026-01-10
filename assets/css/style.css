@@ -1,0 +1,100 @@
+/* 
+* Portfolio Main Stylesheet
+* Modern Dark Theme 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+/* Base */
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+}
+
+a {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Utilities / Custom Components */
+.text-gradient {
+    background: linear-gradient(to right, #00f2ea, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Custom Buttons (Overriding Bootstrap for Premium Feel) */
+.btn-primary {
+    background: linear-gradient(135deg, #00f2ea, #7000ff);
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 242, 234, 0.3);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 242, 234, 0.5);
+    background: linear-gradient(135deg, #00f2ea, #7000ff);
+    /* Maintain gradient on hover */
+}
+
+/* Hero Background Blob */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: #00f2ea;
+    filter: blur(150px);
+    opacity: 0.1;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Header */
+.logo {
+    font-family: 'Space Grotesk', sans-serif;
+    text-decoration: none !important;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #00f2ea !important;
+}
+
+/* Hover Effects for Cards (Restoring Premium Feel) */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    border-color: rgba(0, 242, 234, 0.5) !important;
+}
+
+/* Contact Icons */
+.rounded-circle.fs-3:hover {
+    background-color: #00f2ea !important;
+    color: #0a0a0a !important;
+    opacity: 1 !important;
+}
