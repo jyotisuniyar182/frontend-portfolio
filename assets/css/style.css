@@ -1,6 +1,6 @@
 /* 
 * Portfolio Main Stylesheet
-* Modern Dark Theme 
+* Modern Dark Theme
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
@@ -8,8 +8,10 @@
 /* Base */
 body {
     font-family: 'Outfit', sans-serif;
-    background-color: #0a0a0a;
-    color: #e0e0e0;
+    /* Deep Dark Navy (Reference Style) */
+    background-color: #0b1120;
+    color: #cbd5e1;
+    /* Slate-300 for better readability */
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -22,6 +24,7 @@ h5,
 h6 {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
+    color: #ffffff;
 }
 
 a {
@@ -30,25 +33,41 @@ a {
 
 /* Utilities / Custom Components */
 .text-gradient {
-    background: linear-gradient(to right, #00f2ea, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    /* Coral Orange Accent */
+    color: #ff6b6b;
+    text-shadow: 0 0 20px rgba(255, 107, 107, 0.3);
 }
 
-/* Custom Buttons (Overriding Bootstrap for Premium Feel) */
+.text-info {
+    color: #ff6b6b !important;
+}
+
+/* Custom Buttons */
 .btn-primary {
-    background: linear-gradient(135deg, #00f2ea, #7000ff);
+    background-color: #ff6b6b;
+    color: #fff;
+    font-weight: 600;
     border: none;
-    box-shadow: 0 4px 15px rgba(0, 242, 234, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 242, 234, 0.5);
-    background: linear-gradient(135deg, #00f2ea, #7000ff);
-    /* Maintain gradient on hover */
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.5);
+    background-color: #ff5252;
+    color: #fff;
+}
+
+.btn-outline-info {
+    color: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+.btn-outline-info:hover {
+    background-color: #ff6b6b;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
 }
 
 /* Hero Background Blob */
@@ -57,44 +76,67 @@ a {
     position: absolute;
     top: -10%;
     right: -10%;
-    width: 500px;
-    height: 500px;
-    background: #00f2ea;
+    width: 600px;
+    height: 600px;
+    background: #ff6b6b;
     filter: blur(150px);
-    opacity: 0.1;
+    opacity: 0.08;
     border-radius: 50%;
     z-index: -1;
+}
+
+.hero::after {
+    display: none;
+    /* Simplify to single light source */
 }
 
 /* Header */
 .logo {
     font-family: 'Space Grotesk', sans-serif;
     text-decoration: none !important;
+    color: #fff;
 }
 
 .nav-link {
     font-weight: 500;
+    color: #cbd5e1 !important;
 }
 
 .nav-link:hover,
 .nav-link.active {
-    color: #00f2ea !important;
+    color: #ff6b6b !important;
 }
 
-/* Hover Effects for Cards (Restoring Premium Feel) */
+/* Cards (Flat, Clean Dark Navy) */
+.card,
+.bg-dark {
+    background-color: #111b2e !important;
+    border: 1px solid #1e293b !important;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+/* Hover Effects */
 .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    border-color: rgba(0, 242, 234, 0.5) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: #ff6b6b !important;
+}
+
+/* Badges */
+.badge.bg-dark {
+    background-color: #1e293b !important;
+    border: none !important;
+    color: #cbd5e1 !important;
 }
 
 /* Contact Icons */
 .rounded-circle.fs-3:hover {
-    background-color: #00f2ea !important;
-    color: #0a0a0a !important;
+    background-color: #ff6b6b !important;
+    color: #fff !important;
     opacity: 1 !important;
 }
