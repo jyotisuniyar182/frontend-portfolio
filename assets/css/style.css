@@ -7,11 +7,9 @@
 
 /* Base */
 body {
-    font-family: 'Outfit', sans-serif;
-    /* Deep Dark Navy (Reference Style) */
+    font-family: "Work Sans", sans-serif !important;
     background-color: #0b1120;
     color: #cbd5e1;
-    /* Slate-300 for better readability */
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -22,7 +20,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
     color: #ffffff;
 }
@@ -139,4 +136,188 @@ a {
     background-color: #ff6b6b !important;
     color: #fff !important;
     opacity: 1 !important;
+}
+
+/* Removed Inline Styles & Spacing Utilities */
+
+footer {
+    padding: 48px 0;
+}
+
+/* -----------------------------------------------------------
+   BOOTSTRAP OVERRIDES (Typography & Pixels)
+   Enforcing strict pixel values and font control from style.css
+------------------------------------------------------------ */
+
+/* Force global font family */
+:root {
+    --bs-body-font-family: "Work Sans", sans-serif;
+    --bs-font-sans-serif: "Work Sans", sans-serif;
+}
+
+body {
+    font-family: "Work Sans", sans-serif !important;
+    font-size: 16px !important;
+}
+
+/* Strict Pixel Typography */
+h1,
+.h1 {
+    font-size: 56px !important;
+}
+
+h2,
+.h2 {
+    font-size: 48px !important;
+}
+
+h3,
+.h3 {
+    font-size: 32px !important;
+}
+
+h4,
+.h4 {
+    font-size: 24px !important;
+}
+
+h5,
+.h5 {
+    font-size: 20px !important;
+}
+
+h6,
+.h6 {
+    font-size: 16px !important;
+}
+
+/* Display Classes (Used in Hero & Headers) */
+.display-1 {
+    font-size: 96px !important;
+}
+
+.display-2 {
+    font-size: 88px !important;
+}
+
+.display-3 {
+    font-size: 72px !important;
+}
+
+.display-4 {
+    font-size: 64px !important;
+}
+
+.display-5 {
+    font-size: 48px !important;
+}
+
+.display-6 {
+    font-size: 40px !important;
+}
+
+/* Content Elements */
+p,
+.lead {
+    font-size: 18px !important;
+}
+
+.small,
+small,
+.text-small {
+    font-size: 14px !important;
+}
+
+.badge-small {
+    font-size: 11px !important;
+}
+
+/* Layout Spacing (Converted to Pixels) */
+section {
+    padding: 80px 0 !important;
+    /* Was 5rem */
+}
+
+.hero {
+    padding-top: 120px !important;
+    /* Adjusted for header */
+    padding-bottom: 80px !important;
+}
+
+.py-5 {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+}
+
+.hero-desc {
+    margin-top: -40px !important;
+}
+
+/* Header */
+.navbar-custom {
+    background-color: rgba(11, 17, 32, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Main Heading (Custom) */
+.main-heading {
+    font-size: 52px !important;
+    line-height: 60px !important;
+}
+
+@media (max-width: 991px) {
+    .main-heading {
+        font-size: 42px !important;
+        line-height: 50px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 36px !important;
+        line-height: 44px !important;
+    }
+}
+
+/* Typography Utilities */
+.section-description {
+    max-width: 600px;
+}
+
+.text-small {
+    font-size: 14px !important;
+}
+
+.badge-small {
+    font-size: 11px !important;
+}
+
+/* Card Images */
+.card-img-fit {
+    object-fit: cover;
+    object-position: top center;
+}
+
+/* Preview Containers */
+.preview-container-large {
+    height: 300px;
+    width: 100%;
+}
+
+.preview-container {
+    height: 250px;
+}
+
+/* Icon Boxes */
+.icon-box {
+    width: 50px;
+    height: 50px;
+}
+
+/* Contact Icons */
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    transition: all 0.3s;
 }

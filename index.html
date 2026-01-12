@@ -8,56 +8,62 @@
   <meta name="description"
     content="Portfolio of Jyoti Suniyar, a Senior Frontend Developer specializing in HubSpot CMS, Elementor, and responsive web design.">
   <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
   <!-- Header -->
-  <!-- Header -->
-  <!-- Header -->
-  <!-- Header -->
-  <header class="fixed-top navbar-dark transition-base"
-    style="background-color: rgba(11, 17, 32, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.05);">
-    <nav class="navbar navbar-expand-lg container py-3">
-      <a class="navbar-brand fw-bold logo" href="#">Jyoti<span class="text-gradient">.dev</span></a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav gap-3 align-items-center">
-          <li class="nav-item">
-            <a class="nav-link active" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Details/Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <header class="fixed-top navbar-dark transition-base navbar-custom">
+    <div class="container">
+
+
+      <nav class="navbar navbar-expand-lg container py-3">
+        <a class="navbar-brand fw-bold logo" href="#">Jyoti<span class="text-gradient">.dev</span></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav gap-3 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Details/Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="hero min-vh-100 d-flex align-items-center pt-5 position-relative overflow-hidden">
+  <section id="home" class="hero min-vh-100 d-flex align-items-center position-relative overflow-hidden">
     <div class="container">
       <div class="row align-items-center">
         <!-- Left Column: Details -->
         <div class="col-lg-6">
-          <h1 class="display-3 fw-bold mb-4">Crafting Digital <br><span class="text-gradient">Masterpieces</span></h1>
-          <p class="lead text-secondary mb-5">I’m a Frontend Developer with 5+ years of experience, specializing in
-            HubSpot CMS development.
-            I build high-converting landing pages, responsive websites, and performance-driven email templates using
-            modern frontend technologies.</p>
+          <h1 class="main-heading fw-bold mb-2">Transforming Ideas into <span
+              class="text-gradient">High-Performing</span>
+            Web Experiences</h1>
+          <p class="lead text-secondary mb-5">I’m a Frontend Developer & HubSpot CMS Specialist with 5+ years of
+            experience building conversion-focused landing pages, responsive websites, and robust email campaigns. I
+            partner with marketing and product teams to deliver scalable, accessible, and high-impact digital solutions.
+          </p>
 
           <div class="d-flex gap-3 mb-5">
             <a href="#projects" class="btn btn-primary btn-lg shadow-lg">View My Work</a>
@@ -69,25 +75,15 @@
         <div class="col-lg-5 offset-lg-1">
           <div class="row g-4">
             <div class="col-6">
-              <div class="p-4 bg-dark border border-secondary rounded-4 h-100 text-center">
-                <h3 class="display-4 fw-bold text-gradient mb-0">5+</h3>
+              <div class="p-4 bg-dark border hero-desc border-secondary rounded-4 h-100 text-center">
+                <h3 class="fw-bold text-white mb-0">5+</h3>
                 <p class="text-secondary small mb-0 mt-2">Years of Experience</p>
               </div>
             </div>
             <div class="col-6">
-              <div class="p-4 bg-dark border border-secondary rounded-4 h-100 text-center">
-                <h3 class="h2 fw-bold text-white mb-0">HubSpot</h3>
+              <div class="p-4 bg-dark border hero-desc  border-secondary rounded-4 h-100 text-center">
+                <h3 class=" fw-bold text-white mb-0">HubSpot</h3>
                 <p class="text-secondary small mb-0 mt-2">CMS Expert</p>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="p-4 bg-dark border border-secondary rounded-4 text-center">
-                <p class="mb-0 text-secondary">Specializing in:</p>
-                <div class="d-flex justify-content-center gap-2 mt-2 flex-wrap">
-                  <span class="badge bg-secondary bg-opacity-25 text-info">Landing Pages</span>
-                  <span class="badge bg-secondary bg-opacity-25 text-info">Email Dev</span>
-                  <span class="badge bg-secondary bg-opacity-25 text-info">UI/UX</span>
-                </div>
               </div>
             </div>
           </div>
@@ -97,11 +93,55 @@
   </section>
 
   <!-- Skills Section -->
-  <section id="about" class="py-5">
-    <div class="container py-5">
+  <section id="about">
+    <div class="container">
+      <!-- About Narrative -->
+      <div class="row align-items-center mb-5 pb-5 border-bottom border-secondary border-opacity-10">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="display-5 fw-bold mb-4">About <span class="text-gradient">Me</span></h2>
+          <p class="text-secondary mb-4" style="font-size: 18px;">
+            I am a passionate Frontend Developer focused on modern web experiences and marketing technology. With over
+            <strong class="text-white">5 years of professional experience</strong>, I specialize in HubSpot CMS
+            development, responsive design,
+            and email template engineering.
+          </p>
+          <p class="text-secondary" style="font-size: 18px;">
+            I’ve successfully delivered <strong class="text-info">90+ HubSpot pages</strong>, <strong
+              class="text-info">100+ email templates</strong>, and supported <strong class="text-info">30+ marketing
+              campaigns</strong> with tight deadlines and high quality outputs.
+          </p>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <div class="p-4 bg-dark border border-secondary rounded-4">
+            <h3 class="h4 fw-bold text-white mb-4">I believe in:</h3>
+            <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+              <li class="d-flex align-items-start gap-3">
+                <span class="text-gradient h5 mb-0">✓</span>
+                <span class="text-secondary">Clean, semantic code</span>
+              </li>
+              <li class="d-flex align-items-start gap-3">
+                <span class="text-gradient h5 mb-0">✓</span>
+                <span class="text-secondary">Performance-driven designs</span>
+              </li>
+              <li class="d-flex align-items-start gap-3">
+                <span class="text-gradient h5 mb-0">✓</span>
+                <span class="text-secondary">Accessibility (WCAG 2.1) best practices</span>
+              </li>
+              <li class="d-flex align-items-start gap-3">
+                <span class="text-gradient h5 mb-0">✓</span>
+                <span class="text-secondary">Seamless collaboration with design teams</span>
+              </li>
+              <li class="d-flex align-items-start gap-3">
+                <span class="text-gradient h5 mb-0">✓</span>
+                <span class="text-secondary">Pixel-perfect implementation</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="text-center mb-5">
         <h2 class="display-5 fw-bold mb-3">Technical <span class="text-gradient">Arsenal</span></h2>
-        <p class="lead text-secondary mx-auto" style="max-width: 600px;">
+        <p class="lead text-secondary mx-auto section-description">
           Comprehensive toolkit ensuring pixel-perfect execution across platforms.
         </p>
       </div>
@@ -260,11 +300,11 @@
 
 
   <!-- Services Section -->
-  <section id="services" class="py-5">
-    <div class="container py-5">
+  <section id="services">
+    <div class="container">
       <div class="text-center mb-5">
         <h2 class="display-5 fw-bold mb-3">What I <span class="text-gradient">Do Best</span></h2>
-        <p class="lead text-secondary mx-auto" style="max-width: 600px;">Specialized services tailored for performance
+        <p class="lead text-secondary mx-auto section-description">Specialized services tailored for performance
           and conversion.</p>
       </div>
 
@@ -335,11 +375,11 @@
   </section>
 
   <!-- Email Templates Section -->
-  <section id="email-templates" class="py-5 bg-dark">
-    <div class="container py-5">
+  <section id="email-templates" class="bg-dark">
+    <div class="container">
       <div class="text-center mb-5">
         <h2 class="display-5 fw-bold mb-3">Email <span class="text-gradient">Templates</span></h2>
-        <p class="lead text-secondary mx-auto" style="max-width: 600px;">High-performing, responsive email templates.
+        <p class="lead text-secondary mx-auto section-description">High-performing, responsive email templates.
         </p>
       </div>
 
@@ -351,17 +391,18 @@
             <div class="row g-0 h-100">
               <div class="col-4 bg-secondary bg-opacity-10">
                 <img src="assets/images/email-template-1.png" alt="Influencer Marketing Planner"
-                  class="img-fluid w-100 h-100" style="object-fit: cover; object-position: top center;">
+                  class="img-fluid w-100 h-100 card-img-fit">
               </div>
               <div class="col-8 d-flex flex-column">
                 <div class="card-body p-3 d-flex flex-column h-100 justify-content-center">
                   <div class="d-flex gap-1 mb-2">
-                    <span class="badge bg-secondary bg-opacity-25 text-info" style="font-size: 0.7rem;">HubSpot</span>
-                    <span class="badge bg-secondary bg-opacity-25 text-info" style="font-size: 0.7rem;">Email</span>
+                    <span class="badge bg-secondary bg-opacity-25 text-info badge-small">HubSpot</span>
+                    <span class="badge bg-secondary bg-opacity-25 text-info badge-small">Email</span>
                   </div>
                   <h3 class="h6 fw-bold text-white mb-2">Influencer Planner 2025</h3>
-                  <a href="#" class="text-decoration-none text-info fw-bold d-flex align-items-center gap-1 mt-auto"
-                    style="font-size: 0.85rem;">View Template</a>
+                  <a href="#"
+                    class="text-decoration-none text-info fw-bold d-flex align-items-center gap-1 mt-auto text-small">View
+                    Template</a>
                 </div>
               </div>
             </div>
@@ -379,12 +420,13 @@
               <div class="col-8 d-flex flex-column">
                 <div class="card-body p-3 d-flex flex-column h-100 justify-content-center">
                   <div class="d-flex gap-1 mb-2">
-                    <span class="badge bg-secondary bg-opacity-25 text-info" style="font-size: 0.7rem;">HubSpot</span>
-                    <span class="badge bg-secondary bg-opacity-25 text-info" style="font-size: 0.7rem;">Event</span>
+                    <span class="badge bg-secondary bg-opacity-25 text-info badge-small">HubSpot</span>
+                    <span class="badge bg-secondary bg-opacity-25 text-info badge-small">Event</span>
                   </div>
                   <h3 class="h6 fw-bold text-white mb-2">Cannes 2024 Recap</h3>
-                  <a href="#" class="text-decoration-none text-info fw-bold d-flex align-items-center gap-1 mt-auto"
-                    style="font-size: 0.85rem;">View Template</a>
+                  <a href="#"
+                    class="text-decoration-none text-info fw-bold d-flex align-items-center gap-1 mt-auto text-small">View
+                    Template</a>
                 </div>
               </div>
             </div>
@@ -402,12 +444,13 @@
               <div class="col-8 d-flex flex-column">
                 <div class="card-body p-3 d-flex flex-column h-100 justify-content-center">
                   <div class="d-flex gap-1 mb-2">
-                    <span class="badge bg-secondary bg-opacity-25 text-info" style="font-size: 0.7rem;">HubSpot</span>
-                    <span class="badge bg-secondary bg-opacity-25 text-info" style="font-size: 0.7rem;">News</span>
+                    <span class="badge bg-secondary bg-opacity-25 text-info badge-small">HubSpot</span>
+                    <span class="badge bg-secondary bg-opacity-25 text-info badge-small">News</span>
                   </div>
                   <h3 class="h6 fw-bold text-white mb-2">Creator Club</h3>
-                  <a href="#" class="text-decoration-none text-info fw-bold d-flex align-items-center gap-1 mt-auto"
-                    style="font-size: 0.85rem;">View Template</a>
+                  <a href="#"
+                    class="text-decoration-none text-info fw-bold d-flex align-items-center gap-1 mt-auto text-small">View
+                    Template</a>
                 </div>
               </div>
             </div>
@@ -425,12 +468,13 @@
               <div class="col-8 d-flex flex-column">
                 <div class="card-body p-3 d-flex flex-column h-100 justify-content-center">
                   <div class="d-flex gap-1 mb-2">
-                    <span class="badge bg-secondary bg-opacity-25 text-info" style="font-size: 0.7rem;">HubSpot</span>
-                    <span class="badge bg-secondary bg-opacity-25 text-info" style="font-size: 0.7rem;">Product</span>
+                    <span class="badge bg-secondary bg-opacity-25 text-info badge-small">HubSpot</span>
+                    <span class="badge bg-secondary bg-opacity-25 text-info badge-small">Product</span>
                   </div>
                   <h3 class="h6 fw-bold text-white mb-2">Product Launch</h3>
-                  <a href="#" class="text-decoration-none text-info fw-bold d-flex align-items-center gap-1 mt-auto"
-                    style="font-size: 0.85rem;">View Template</a>
+                  <a href="#"
+                    class="text-decoration-none text-info fw-bold d-flex align-items-center gap-1 mt-auto text-small">View
+                    Template</a>
                 </div>
               </div>
             </div>
@@ -448,12 +492,13 @@
               <div class="col-8 d-flex flex-column">
                 <div class="card-body p-3 d-flex flex-column h-100 justify-content-center">
                   <div class="d-flex gap-1 mb-2">
-                    <span class="badge bg-secondary bg-opacity-25 text-info" style="font-size: 0.7rem;">HubSpot</span>
-                    <span class="badge bg-secondary bg-opacity-25 text-info" style="font-size: 0.7rem;">Monthly</span>
+                    <span class="badge bg-secondary bg-opacity-25 text-info badge-small">HubSpot</span>
+                    <span class="badge bg-secondary bg-opacity-25 text-info badge-small">Monthly</span>
                   </div>
                   <h3 class="h6 fw-bold text-white mb-2">Monthly Digest</h3>
-                  <a href="#" class="text-decoration-none text-info fw-bold d-flex align-items-center gap-1 mt-auto"
-                    style="font-size: 0.85rem;">View Template</a>
+                  <a href="#"
+                    class="text-decoration-none text-info fw-bold d-flex align-items-center gap-1 mt-auto text-small">View
+                    Template</a>
                 </div>
               </div>
             </div>
@@ -464,11 +509,11 @@
   </section>
 
   <!-- Selected Works Section -->
-  <section id="projects" class="py-5">
-    <div class="container py-5">
+  <section id="projects">
+    <div class="container">
       <div class="text-center mb-5">
         <h2 class="display-5 fw-bold mb-3">Selected <span class="text-gradient">Works</span></h2>
-        <p class="lead text-secondary mx-auto" style="max-width: 600px;">A showcase of landing pages and websites.</p>
+        <p class="lead text-secondary mx-auto section-description">A showcase of landing pages and websites.</p>
       </div>
       <div class="d-flex flex-column gap-5">
 
@@ -476,8 +521,7 @@
         <div class="row align-items-center p-4 bg-dark rounded-4 border border-secondary">
           <div class="col-lg-6 mb-4 mb-lg-0">
             <div
-              class="bg-secondary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center text-secondary"
-              style="height: 300px; width: 100%;">
+              class="bg-secondary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center text-secondary preview-container-large">
               <span>G2 Landing Page Preview</span>
             </div>
           </div>
@@ -501,8 +545,7 @@
         <div class="row align-items-center p-4 bg-dark rounded-4 border border-secondary">
           <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
             <div
-              class="bg-secondary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center text-secondary"
-              style="height: 300px; width: 100%;">
+              class="bg-secondary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center text-secondary preview-container-large">
               <span>Chicago Raffle Preview</span>
             </div>
           </div>
@@ -534,8 +577,8 @@
         <!-- Project 3 -->
         <div class="col-lg-4 col-md-6">
           <div class="card bg-dark border-secondary overflow-hidden h-100">
-            <div class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center text-secondary"
-              style="height: 250px;">
+            <div
+              class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center text-secondary preview-container">
               <span>Events Hub</span>
             </div>
             <div class="card-body p-4">
@@ -557,8 +600,8 @@
         <!-- Project 4 -->
         <div class="col-lg-4 col-md-6">
           <div class="card bg-dark border-secondary overflow-hidden h-100">
-            <div class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center text-secondary"
-              style="height: 250px;">
+            <div
+              class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center text-secondary preview-container">
               <span>Affiliate Report</span>
             </div>
             <div class="card-body p-4">
@@ -580,8 +623,8 @@
         <!-- Project 5 -->
         <div class="col-lg-4 col-md-6">
           <div class="card bg-dark border-secondary overflow-hidden h-100">
-            <div class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center text-secondary"
-              style="height: 250px;">
+            <div
+              class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center text-secondary preview-container">
               <span>DEI 2025</span>
             </div>
             <div class="card-body p-4">
@@ -603,8 +646,8 @@
         <!-- Project 6 -->
         <div class="col-lg-4 col-md-6">
           <div class="card bg-dark border-secondary overflow-hidden h-100">
-            <div class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center text-secondary"
-              style="height: 250px;">
+            <div
+              class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center text-secondary preview-container">
               <span>Cannes LP</span>
             </div>
             <div class="card-body p-4">
@@ -626,8 +669,8 @@
         <!-- Project 7 -->
         <div class="col-lg-4 col-md-6">
           <div class="card bg-dark border-secondary overflow-hidden h-100">
-            <div class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center text-secondary"
-              style="height: 250px;">
+            <div
+              class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center text-secondary preview-container">
               <span>Kraft Raffle</span>
             </div>
             <div class="card-body p-4">
@@ -649,8 +692,8 @@
         <!-- Project 8 -->
         <div class="col-lg-4 col-md-6">
           <div class="card bg-dark border-secondary overflow-hidden h-100">
-            <div class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center text-secondary"
-              style="height: 250px;">
+            <div
+              class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center text-secondary preview-container">
               <span>Marketing Trends</span>
             </div>
             <div class="card-body p-4">
@@ -672,8 +715,8 @@
         <!-- Project 9 -->
         <div class="col-lg-4 col-md-6">
           <div class="card bg-dark border-secondary overflow-hidden h-100">
-            <div class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center text-secondary"
-              style="height: 250px;">
+            <div
+              class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center text-secondary preview-container">
               <span>Affiliate Data</span>
             </div>
             <div class="card-body p-4">
@@ -702,8 +745,8 @@
     </div>
   </section>
   <!-- Why Work With Me Section -->
-  <section id="why-me" class="py-5 bg-secondary bg-opacity-10">
-    <div class="container py-5">
+  <section id="why-me" class="bg-secondary bg-opacity-10">
+    <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-5 mb-5 mb-lg-0">
           <h2 class="display-5 fw-bold mb-4">Why Choose <br><span class="text-gradient">Me?</span></h2>
@@ -718,8 +761,7 @@
             <div class="d-flex gap-3">
               <div class="flex-shrink-0">
                 <div
-                  class="rounded-circle bg-dark border border-secondary d-flex align-items-center justify-content-center text-info"
-                  style="width: 50px; height: 50px;">
+                  class="rounded-circle bg-dark border border-secondary d-flex align-items-center justify-content-center text-info icon-box">
                   ✓
                 </div>
               </div>
@@ -732,8 +774,7 @@
             <div class="d-flex gap-3">
               <div class="flex-shrink-0">
                 <div
-                  class="rounded-circle bg-dark border border-secondary d-flex align-items-center justify-content-center text-info"
-                  style="width: 50px; height: 50px;">
+                  class="rounded-circle bg-dark border border-secondary d-flex align-items-center justify-content-center text-info icon-box">
                   ✓
                 </div>
               </div>
@@ -747,8 +788,7 @@
             <div class="d-flex gap-3">
               <div class="flex-shrink-0">
                 <div
-                  class="rounded-circle bg-dark border border-secondary d-flex align-items-center justify-content-center text-info"
-                  style="width: 50px; height: 50px;">
+                  class="rounded-circle bg-dark border border-secondary d-flex align-items-center justify-content-center text-info icon-box">
                   ✓
                 </div>
               </div>
@@ -762,8 +802,7 @@
             <div class="d-flex gap-3">
               <div class="flex-shrink-0">
                 <div
-                  class="rounded-circle bg-dark border border-secondary d-flex align-items-center justify-content-center text-info"
-                  style="width: 50px; height: 50px;">
+                  class="rounded-circle bg-dark border border-secondary d-flex align-items-center justify-content-center text-info icon-box">
                   ✓
                 </div>
               </div>
@@ -776,8 +815,7 @@
             <div class="d-flex gap-3">
               <div class="flex-shrink-0">
                 <div
-                  class="rounded-circle bg-dark border border-secondary d-flex align-items-center justify-content-center text-info"
-                  style="width: 50px; height: 50px;">
+                  class="rounded-circle bg-dark border border-secondary d-flex align-items-center justify-content-center text-info icon-box">
                   ✓
                 </div>
               </div>
@@ -790,8 +828,7 @@
             <div class="d-flex gap-3">
               <div class="flex-shrink-0">
                 <div
-                  class="rounded-circle bg-dark border border-secondary d-flex align-items-center justify-content-center text-info"
-                  style="width: 50px; height: 50px;">
+                  class="rounded-circle bg-dark border border-secondary d-flex align-items-center justify-content-center text-info icon-box">
                   ✓
                 </div>
               </div>
@@ -806,11 +843,11 @@
     </div>
   </section>
   <!-- Contact Section -->
-  <section id="contact" class="py-5">
-    <div class="container py-5">
+  <section id="contact">
+    <div class="container">
       <div class="bg-dark border border-secondary rounded-5 p-5 text-center">
         <h2 class="display-5 fw-bold mb-3">Let’s Work <span class="text-gradient">Together</span></h2>
-        <p class="lead text-secondary mx-auto mb-5" style="max-width: 600px;">
+        <p class="lead text-secondary mx-auto mb-5 section-description">
           If you’re looking for a frontend developer who understands HubSpot CMS, marketing needs, and
           performance-driven UI, feel free to connect.
         </p>
@@ -819,8 +856,7 @@
           <!-- Email -->
           <div class="d-flex flex-col flex-column align-items-center gap-3">
             <a href="mailto:jyotisuniyar182@gmail.com"
-              class="d-flex align-items-center justify-content-center bg-secondary bg-opacity-10 text-info rounded-circle fs-3 text-decoration-none"
-              style="width: 60px; height: 60px; transition: all 0.3s;">
+              class="d-flex align-items-center justify-content-center bg-secondary bg-opacity-10 text-info rounded-circle fs-3 text-decoration-none contact-icon">
               📧
             </a>
             <span class="fw-bold">Email</span>
@@ -828,8 +864,7 @@
           <!-- Website -->
           <div class="d-flex flex-col flex-column align-items-center gap-3">
             <a href="https://jyotidev-portfolio.netlify.app" target="_blank"
-              class="d-flex align-items-center justify-content-center bg-secondary bg-opacity-10 text-info rounded-circle fs-3 text-decoration-none"
-              style="width: 60px; height: 60px; transition: all 0.3s;">
+              class="d-flex align-items-center justify-content-center bg-secondary bg-opacity-10 text-info rounded-circle fs-3 text-decoration-none contact-icon">
               🌐
             </a>
             <span class="fw-bold">Portfolio</span>
@@ -837,8 +872,7 @@
           <!-- LinkedIn -->
           <div class="d-flex flex-col flex-column align-items-center gap-3">
             <a href="https://www.linkedin.com/in/jyoti-sharma-ba706a10a/" target="_blank"
-              class="d-flex align-items-center justify-content-center bg-secondary bg-opacity-10 text-info rounded-circle fs-3 text-decoration-none"
-              style="width: 60px; height: 60px; transition: all 0.3s;">
+              class="d-flex align-items-center justify-content-center bg-secondary bg-opacity-10 text-info rounded-circle fs-3 text-decoration-none contact-icon">
               🔗
             </a>
             <span class="fw-bold">LinkedIn</span>
@@ -849,7 +883,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-5 border-top border-secondary text-center text-secondary small">
+  <footer class="border-top border-secondary text-center text-secondary small">
     <div class="container">
       <p class="mb-0">&copy; 2026 Jyoti Suniyar. Built with HTML, CSS & JS.</p>
     </div>
