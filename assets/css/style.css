@@ -8,8 +8,10 @@
 /* Base */
 body {
     font-family: "Work Sans", sans-serif !important;
-    background-color: #0b1120;
-    color: #cbd5e1;
+    background-color: #020617 !important;
+    /* Slate 950 (Almost Black) */
+    color: #94a3b8 !important;
+    /* Slate 400 Text */
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -19,122 +21,229 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     font-weight: 700;
-    color: #ffffff;
+    color: #f8fafc !important;
+    /* White/Slate 50 Headings */
 }
 
 a {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #6366f1;
+    /* Indigo */
+}
+
+a {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #d63384;
 }
 
 /* Utilities / Custom Components */
 .text-gradient {
-    /* Coral Orange Accent */
-    color: #ff6b6b;
+    /* Electric Blue to Lavender Gradient */
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #6366f1;
+    /* Fallback */
+    text-shadow: none;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 89%;
+    margin: 0 auto;
+}
+
+.text-info,
+.text-white {
+    color: #f8fafc !important;
+    /* White for headers on dark bg */
 }
 
 .text-info {
-    color: #ff6b6b !important;
+    color: #818cf8 !important;
+    /* Light Indigo Accent */
+}
+
+.text-secondary {
+    color: #94a3b8 !important;
+    /* Slate 400 - Readable on black */
 }
 
 /* Custom Buttons */
 .btn-primary {
-    background-color: #ff6b6b;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
     color: #fff;
     font-weight: 600;
     border: none;
-    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.5);
-    background-color: #ff5252;
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+    background: linear-gradient(135deg, #4338ca 0%, #6d28d9 100%);
     color: #fff;
 }
 
 .btn-outline-info {
-    color: #ff6b6b;
-    border-color: #ff6b6b;
+    color: #4f46e5;
+    border-color: #4f46e5;
 }
 
 .btn-outline-info:hover {
-    background-color: #ff6b6b;
+    background-color: #4f46e5;
     color: #fff;
-    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.25);
 }
 
 /* Hero Background Blob */
+.hero {
+    position: relative;
+}
+
 .hero::before {
     content: '';
     position: absolute;
-    top: -10%;
+    top: -20%;
     right: -10%;
-    width: 600px;
-    height: 600px;
-    background: #ff6b6b;
-    filter: blur(150px);
-    opacity: 0.08;
-    border-radius: 50%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(124, 58, 237, 0.05) 60%, transparent 70%);
+    filter: blur(80px);
+    /* Smoother blur */
     z-index: -1;
+    pointer-events: none;
 }
+
 
 .hero::after {
     display: none;
-    /* Simplify to single light source */
 }
 
 /* Header */
+.navbar-brand {
+    transform: translateY(0);
+    /* Fix for potential alignment issues */
+}
+
 .logo {
     font-family: 'Space Grotesk', sans-serif;
     text-decoration: none !important;
-    color: #fff;
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* Standard property */
+    position: relative;
+    display: inline-block;
 }
 
 .nav-link {
     font-weight: 500;
     color: #cbd5e1 !important;
+    /* Slate 300 */
 }
 
 .nav-link:hover,
 .nav-link.active {
-    color: #ff6b6b !important;
+    color: #818cf8 !important;
+    /* Light Indigo */
 }
 
-/* Cards (Flat, Clean Dark Navy) */
+/* Cards (Premium Dark Look) */
+/* Cards (Premium Dark Look) */
+/* Cards (Premium Dark Look) */
 .card,
 .bg-dark {
-    background-color: #111b2e !important;
+    background-color: #0f172a !important;
+    /* Slate 900 */
     border: 1px solid #1e293b !important;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
+    /* Low contrast border */
+    box-shadow: none;
+    /* Cleaner look */
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Hover Effects */
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    border-color: #ff6b6b !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+    border-color: #4f46e5 !important;
 }
 
-/* Badges */
-.badge.bg-dark {
-    background-color: #1e293b !important;
-    border: none !important;
-    color: #cbd5e1 !important;
+
+
+/* Skill Cards (Icon + Text) */
+.skill-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #0f172a;
+    /* Slate 900 */
+    border: 1px solid #1e293b;
+    /* Slate 800 */
+    padding: 12px 18px;
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    min-width: 140px;
+    text-decoration: none;
+}
+
+.skill-card span {
+    font-weight: 600;
+    color: #e2e8f0;
+    /* Slate 200 */
+    font-size: 15px;
+}
+
+.skill-card i {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card span {
+    font-weight: 600;
+    color: #334155;
+    font-size: 15px;
+}
+
+.skill-card:hover {
+    border-color: #6366f1;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.skill-card:hover i {
+    transform: scale(1.1);
+}
+
+.skill-card:hover span {
+    color: #0f172a;
 }
 
 /* Contact Icons */
 .rounded-circle.fs-3:hover {
-    background-color: #ff6b6b !important;
+    background-color: #4f46e5 !important;
     color: #fff !important;
     opacity: 1 !important;
+}
+
+.rounded-circle.fs-3 {
+    background-color: #eff6ff !important;
+    /* Light blue background */
+    color: #4f46e5 !important;
 }
 
 /* Removed Inline Styles & Spacing Utilities */
@@ -248,21 +357,73 @@ section {
     padding-bottom: 80px !important;
 }
 
+.email-screesnots {
+    column-count: 4;
+    column-gap: 1rem;
+    width: 70%;
+    margin: auto;
+    max-height: 800px;
+    overflow-y: auto;
+    padding-right: 1rem;
+    scrollbar-width: thin;
+    scrollbar-color: #334155 #020617;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+/* Webkit Scrollbar Styling */
+.email-screesnots::-webkit-scrollbar {
+    width: 8px;
+}
+
+.email-screesnots::-webkit-scrollbar-track {
+    background: #020617;
+    border-radius: 4px;
+}
+
+.email-screesnots::-webkit-scrollbar-thumb {
+    background-color: #334155;
+    border-radius: 4px;
+    border: 2px solid #020617;
+}
+
+.email-container {
+    width: 30%;
+    break-inside: avoid;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Masonry */
+@media (max-width: 992px) {
+    .email-screesnots {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 576px) {
+    .email-screesnots {
+        column-count: 2;
+    }
+}
+
 /* Stats Card (Custom) */
 .stat-card {
     transition: transform 0.3s ease, border-color 0.3s ease;
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
 }
 
 .stat-card:hover {
     transform: translateY(-5px);
-    border-color: #ff6b6b !important;
+    border-color: #6366f1 !important;
 }
 
 /* Header */
 .navbar-custom {
-    background-color: rgba(11, 17, 32, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    /* Slate Glass */
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.05);
 }
 
 /* Main Heading (Custom) */
@@ -325,4 +486,32 @@ section {
     width: 60px;
     height: 60px;
     transition: all 0.3s;
+}
+
+/* Footer Padding */
+footer {
+    padding-bottom: 2rem;
+}
+
+/* Slick Slider Customization */
+.slick-dots li button:before {
+    color: #cbd5e1 !important;
+    /* Inactive dot color */
+    opacity: 0.5;
+    font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #6366f1 !important;
+    /* Active dot color */
+    opacity: 1;
+}
+
+.email-slider {
+    margin-bottom: 30px;
+}
+
+.email-slider .px-2 {
+    outline: none;
+    /* Remove focus ring on click */
 }
